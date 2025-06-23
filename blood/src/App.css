@@ -1,0 +1,60 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Theme styles */
+body.light {
+  background-color: #f4f4f4;
+  color: #111;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Main app wrapper */
+.app {
+  min-height: 100vh;
+  padding-top: 70px; /* space for fixed navbar */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+/* Navbar links */
+.nav-link {
+  color: inherit !important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Toggle button icons */
+.btn-light svg {
+  stroke: #333;
+}
+
+.btn-dark svg {
+  stroke: #fff;
+}
+
+/* (Optional) Logo spin */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
